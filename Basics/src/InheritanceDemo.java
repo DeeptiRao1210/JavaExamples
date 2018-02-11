@@ -75,11 +75,17 @@ public class InheritanceDemo
 {
    public static void main( String [] args)
    {
+       //Base Class reference variable referring to subclass object
+       Animal myAnimal = new Cat();
+       myAnimal.ShowAnimalDetails();
+
+       //Using Default constructor of subclass Cat
        Cat myKitty = new Cat();
        myKitty.SetDomesticated(true);
        myKitty.SetFurColor("Orange");
        myKitty.GetCatDetails();
 
+       //Using parameterized constructor
        Animal whatAnimal = new Animal("Tiger","Carnivore",18,"Roar");
        whatAnimal.ShowAnimalDetails();
 
